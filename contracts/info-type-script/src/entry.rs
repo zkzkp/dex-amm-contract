@@ -84,7 +84,7 @@ pub fn verify_info_creation(
     info_out_cell: &CellOutput,
     info_type_code_hash: [u8; 32],
 ) -> Result<(), Error> {
-    verify_type_id()?;
+    // verify_type_id()?;
 
     let input_info_cell_count = QueryIter::new(load_cell, Source::Input)
         .filter(|cell| {
